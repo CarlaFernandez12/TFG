@@ -1,0 +1,77 @@
+# Bytecode y cachés de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.so
+
+# Entornos virtuales
+env/
+venv/
+.monai_env/
+.monaideploy_env/
+
+# Archivos de configuración locales
+*.env
+.env.*
+
+# Archivos de salida y logs
+*.log
+*.out
+*.tmp
+*.bak
+
+# Archivos temporales del sistema operativo
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Carpeta con imágenes descargadas
+imagenes_descargadas/
+html_resultado/imagenes_descargadas/
+
+# HTML generados automáticamente
+html_resultado/index_corregido.html
+html_resultado/index_corregido_base64.html
+
+# Modelos y checkpoints
+*.pth
+*.pt
+*.ckpt
+models/
+checkpoints/
+
+# Archivos DICOM
+*.dcm
+dicom/
+uploads/
+downloads/
+
+# Salida de MONAI o resultados procesados
+output/
+results/
+predictions/
+
+# Docker
+*.tar
+*.img
+*.container
+docker-compose.override.yml
+
+# Archivos de VSCode
+.vscode/
+
+# Archivos de Jupyter
+.ipynb_checkpoints/
+
+# Archivos comprimidos
+*.zip
+*.gz
+*.tar
+*.7z
+*.rar
+
+# Otros
+.idea/
