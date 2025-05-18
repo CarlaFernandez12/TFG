@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icons_blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1e2749;
+      }
+    </style>
+  </defs>
+  <path id="twitter_blue" class="cls-1" d="m7.67,1.18H.1l8.94,11.92L.59,22.82h2.87l6.91-7.95,5.96,7.95h7.57l-9.31-12.42L22.6,1.18h-2.87l-6.48,7.45L7.67,1.18Zm9.74,19.47L4.43,3.35h2.16l12.98,17.31h-2.16Z"/>
+</svg>

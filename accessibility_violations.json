@@ -1,0 +1,1008 @@
+[
+    {
+        "description": "Ensures every id attribute value is unique",
+        "help": "id attribute value must be unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/duplicate-id?application=axeAPI",
+        "id": "duplicate-id",
+        "impact": "minor",
+        "nodes": [
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": "Content",
+                        "id": "duplicate-id",
+                        "impact": "minor",
+                        "message": "Document has multiple static elements with the same id attribute",
+                        "relatedNodes": [
+                            {
+                                "html": "<div class=\"show  \" id=\"Content\" role=\"presentation\">",
+                                "target": [
+                                    "#wfkm___fm > .c-search-bar-menu > .show[role=\"presentation\"]"
+                                ]
+                            },
+                            {
+                                "html": "<div class=\"show  \" id=\"Content\" role=\"presentation\">",
+                                "target": [
+                                    ".c-search-bar > .show[role=\"presentation\"]"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute",
+                "html": "<div class=\"show  \" id=\"Content\" role=\"presentation\">",
+                "impact": "minor",
+                "none": [],
+                "target": [
+                    "#dkrk___fm > .c-search-bar-menu > .show[role=\"presentation\"]"
+                ]
+            }
+        ],
+        "tags": [
+            "cat.parsing",
+            "wcag2a",
+            "wcag411"
+        ]
+    },
+    {
+        "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+        "help": "Images must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/image-alt?application=axeAPI",
+        "id": "image-alt",
+        "impact": "critical",
+        "nodes": [
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"c-card-image__image\" data-lfr-editable-id=\"imageImageCardHorizontal_1\" data-lfr-editable-type=\"image\" data-fileentryid=\"85787\" src=\"/documents/d/guest/ciudadania?imagePreview=1\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    "img[data-lfr-editable-id=\"imageImageCardHorizontal_1\"]"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"c-card-image__image\" data-lfr-editable-id=\"imageImageCardHorizontal_2\" data-lfr-editable-type=\"image\" data-fileentryid=\"90579\" src=\"/documents/d/guest/profesionales?imagePreview=1\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    "img[data-lfr-editable-id=\"imageImageCardHorizontal_2\"]"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"c-card-image__image\" data-lfr-editable-id=\"imageImageCardHorizontal_3\" data-lfr-editable-type=\"image\" data-fileentryid=\"156585\" src=\"/documents/d/guest/oficina-jpg?imagePreview=1\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    "img[data-lfr-editable-id=\"imageImageCardHorizontal_3\"]"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"c-card-image__image\" data-lfr-editable-id=\"imageImageCardHorizontal_4\" data-lfr-editable-type=\"image\" data-fileentryid=\"90622\" src=\"/documents/d/guest/transparencia?imagePreview=1\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    "img[data-lfr-editable-id=\"imageImageCardHorizontal_4\"]"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"c-card-banner__image\" data-lfr-editable-id=\"cardBannerImage_1\" data-lfr-editable-type=\"image\" data-fileentryid=\"85749\" src=\"/documents/d/guest/card-banner?imagePreview=1\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    "img[data-lfr-editable-id=\"cardBannerImage_1\"]"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"c-card-banner__image\" data-lfr-editable-id=\"cardBannerImage_2\" data-lfr-editable-type=\"image\" data-fileentryid=\"89809\" src=\"/documents/d/guest/bannermisaludscs?imagePreview=1\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    "img[data-lfr-editable-id=\"cardBannerImage_2\"]"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"c-card-banner__image\" data-lfr-editable-id=\"cardBannerImage_3\" data-lfr-editable-type=\"image\" data-fileentryid=\"139930\" src=\"/documents/d/guest/cohortehero-png?imagePreview=1\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    "img[data-lfr-editable-id=\"cardBannerImage_3\"]"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"c-card-banner__image\" data-lfr-editable-id=\"cardBannerImage_4\" data-lfr-editable-type=\"image\" data-fileentryid=\"89797\" src=\"/documents/d/guest/bannerescuelacantabra?imagePreview=1\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    "img[data-lfr-editable-id=\"cardBannerImage_4\"]"
+                ]
+            }
+        ],
+        "tags": [
+            "cat.text-alternatives",
+            "wcag2a",
+            "wcag111",
+            "section508",
+            "section508.22.a"
+        ]
+    },
+    {
+        "description": "Ensures links have discernible text",
+        "help": "Links must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/link-name?application=axeAPI",
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": [
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-visible-text",
+                        "impact": "minor",
+                        "message": "Element does not have text that is visible to screen readers",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<a href=\"/consejer%C3%ADa\"><img alt=\"\" class=\"w-100\" data-lfr-editable-id=\"image-square\" data-lfr-editable-type=\"image\" src=\"/documents/d/guest/consejeria-salud-logo?imagePreview=1\" data-fileentryid=\"84577\"></a>",
+                "impact": "serious",
+                "none": [
+                    {
+                        "data": null,
+                        "id": "focusable-no-name",
+                        "impact": "serious",
+                        "message": "Element is in tab order and does not have accessible text",
+                        "relatedNodes": []
+                    }
+                ],
+                "target": [
+                    ":root"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-visible-text",
+                        "impact": "minor",
+                        "message": "Element does not have text that is visible to screen readers",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<a href=\"/scs\"><img alt=\"\" class=\"w-100\" data-lfr-editable-id=\"image-square\" data-lfr-editable-type=\"image\" src=\"/documents/d/guest/logo_scs_2-png?imagePreview=1\" data-fileentryid=\"567226\"></a>",
+                "impact": "serious",
+                "none": [
+                    {
+                        "data": null,
+                        "id": "focusable-no-name",
+                        "impact": "serious",
+                        "message": "Element is in tab order and does not have accessible text",
+                        "relatedNodes": []
+                    }
+                ],
+                "target": [
+                    ".component-image.overflow-hidden > a[href$=\"scs\"]"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-visible-text",
+                        "impact": "minor",
+                        "message": "Element does not have text that is visible to screen readers",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<a href=\"https://www.escuelacantabradesalud.es/\"><img class=\"c-card-banner__image\" data-lfr-editable-id=\"cardBannerImage_4\" data-lfr-editable-type=\"image\" data-fileentryid=\"89797\" src=\"/documents/d/guest/bannerescuelacantabra?imagePreview=1\"></a>",
+                "impact": "serious",
+                "none": [
+                    {
+                        "data": null,
+                        "id": "focusable-no-name",
+                        "impact": "serious",
+                        "message": "Element is in tab order and does not have accessible text",
+                        "relatedNodes": []
+                    }
+                ],
+                "target": [
+                    ".c-card-banner.clicable-card.linkify > a"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-visible-text",
+                        "impact": "minor",
+                        "message": "Element does not have text that is visible to screen readers",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<a target=\"_blank\" href=\"https://fmvaldecilla.es/unidad/informacion-corporativa/politica-de-calidad-y-medioambiente/\">",
+                "impact": "serious",
+                "none": [
+                    {
+                        "data": null,
+                        "id": "focusable-no-name",
+                        "impact": "serious",
+                        "message": "Element is in tab order and does not have accessible text",
+                        "relatedNodes": []
+                    }
+                ],
+                "target": [
+                    ".c-list-logos__item:nth-child(1) > a[target=\"_blank\"]"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-visible-text",
+                        "impact": "minor",
+                        "message": "Element does not have text that is visible to screen readers",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<a target=\"_blank\" href=\"http://www.escuelacantabradesalud.es/\"><img data-senna-off=\"true\" class=\"c-image\" data-lfr-editable-type=\"image\" data-lfr-editable-id=\"logoImage2\" src=\"/documents/d/guest/logo_escuela-cantabra?imagePreview=1\" alt=\"\" data-fileentryid=\"86381\"></a>",
+                "impact": "serious",
+                "none": [
+                    {
+                        "data": null,
+                        "id": "focusable-no-name",
+                        "impact": "serious",
+                        "message": "Element is in tab order and does not have accessible text",
+                        "relatedNodes": []
+                    }
+                ],
+                "target": [
+                    ".c-list-logos__item:nth-child(2) > a[target=\"_blank\"]"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-visible-text",
+                        "impact": "minor",
+                        "message": "Element does not have text that is visible to screen readers",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<a target=\"_blank\" href=\"https://fmvaldecilla.es/\"><img data-senna-off=\"true\" class=\"c-image\" data-lfr-editable-type=\"image\" data-lfr-editable-id=\"logoImage3\" src=\"/documents/d/guest/logo_fundacion-valdecilla?imagePreview=1\" alt=\"\" data-fileentryid=\"86367\"></a>",
+                "impact": "serious",
+                "none": [
+                    {
+                        "data": null,
+                        "id": "focusable-no-name",
+                        "impact": "serious",
+                        "message": "Element is in tab order and does not have accessible text",
+                        "relatedNodes": []
+                    }
+                ],
+                "target": [
+                    "a[href$=\"fmvaldecilla.es/\"]"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-visible-text",
+                        "impact": "minor",
+                        "message": "Element does not have text that is visible to screen readers",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<a target=\"_blank\" href=\"https://fmvaldecilla.es/unidad/observatorio-de-salud-publica-de-cantabria/\">",
+                "impact": "serious",
+                "none": [
+                    {
+                        "data": null,
+                        "id": "focusable-no-name",
+                        "impact": "serious",
+                        "message": "Element is in tab order and does not have accessible text",
+                        "relatedNodes": []
+                    }
+                ],
+                "target": [
+                    ".c-list-logos__item:nth-child(4) > a[target=\"_blank\"]"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-visible-text",
+                        "impact": "minor",
+                        "message": "Element does not have text that is visible to screen readers",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<a target=\"_blank\" href=\"https://sofosmd.scsalud.es/\"><img data-senna-off=\"true\" class=\"c-image\" data-lfr-editable-type=\"image\" data-lfr-editable-id=\"logoImage5\" src=\"/documents/d/guest/logo_sofos?imagePreview=1\" alt=\"\" data-fileentryid=\"86339\"></a>",
+                "impact": "serious",
+                "none": [
+                    {
+                        "data": null,
+                        "id": "focusable-no-name",
+                        "impact": "serious",
+                        "message": "Element is in tab order and does not have accessible text",
+                        "relatedNodes": []
+                    }
+                ],
+                "target": [
+                    "a[href$=\"sofosmd.scsalud.es/\"][target=\"_blank\"]"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-visible-text",
+                        "impact": "minor",
+                        "message": "Element does not have text that is visible to screen readers",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<a href=\"/home\"><img data-senna-off=\"true\" class=\"c-image\" data-lfr-editable-type=\"image\" data-lfr-editable-id=\"logoImage1\" src=\"/documents/d/guest/logo-consejeria-salud?imagePreview=1\" alt=\"\" data-fileentryid=\"334878\"></a>",
+                "impact": "serious",
+                "none": [
+                    {
+                        "data": null,
+                        "id": "focusable-no-name",
+                        "impact": "serious",
+                        "message": "Element is in tab order and does not have accessible text",
+                        "relatedNodes": []
+                    }
+                ],
+                "target": [
+                    ".c-list-logos--footer > .c-list-logos__item:nth-child(1) > a[href$=\"home\"]"
+                ]
+            }
+        ],
+        "tags": [
+            "cat.name-role-value",
+            "wcag2a",
+            "wcag412",
+            "wcag244",
+            "section508",
+            "section508.22.a"
+        ]
+    }
+]

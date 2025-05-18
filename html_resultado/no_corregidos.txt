@@ -1,0 +1,68 @@
+Descripción: Ensures every id attribute value is unique
+Fragmento:
+<div class="show  " id="Content" role="presentation">
+----------------------------------------
+Descripción: Ensures <img> elements have alternate text or a role of none or presentation
+Fragmento:
+<img class="c-card-image__image" data-lfr-editable-id="imageImageCardHorizontal_1" data-lfr-editable-type="image" data-fileentryid="85787" src="/documents/d/guest/ciudadania?imagePreview=1">
+----------------------------------------
+Descripción: Ensures <img> elements have alternate text or a role of none or presentation
+Fragmento:
+<img class="c-card-image__image" data-lfr-editable-id="imageImageCardHorizontal_2" data-lfr-editable-type="image" data-fileentryid="90579" src="/documents/d/guest/profesionales?imagePreview=1">
+----------------------------------------
+Descripción: Ensures <img> elements have alternate text or a role of none or presentation
+Fragmento:
+<img class="c-card-image__image" data-lfr-editable-id="imageImageCardHorizontal_3" data-lfr-editable-type="image" data-fileentryid="156585" src="/documents/d/guest/oficina-jpg?imagePreview=1">
+----------------------------------------
+Descripción: Ensures <img> elements have alternate text or a role of none or presentation
+Fragmento:
+<img class="c-card-image__image" data-lfr-editable-id="imageImageCardHorizontal_4" data-lfr-editable-type="image" data-fileentryid="90622" src="/documents/d/guest/transparencia?imagePreview=1">
+----------------------------------------
+Descripción: Ensures <img> elements have alternate text or a role of none or presentation
+Fragmento:
+<img class="c-card-banner__image" data-lfr-editable-id="cardBannerImage_1" data-lfr-editable-type="image" data-fileentryid="85749" src="/documents/d/guest/card-banner?imagePreview=1">
+----------------------------------------
+Descripción: Ensures <img> elements have alternate text or a role of none or presentation
+Fragmento:
+<img class="c-card-banner__image" data-lfr-editable-id="cardBannerImage_2" data-lfr-editable-type="image" data-fileentryid="89809" src="/documents/d/guest/bannermisaludscs?imagePreview=1">
+----------------------------------------
+Descripción: Ensures <img> elements have alternate text or a role of none or presentation
+Fragmento:
+<img class="c-card-banner__image" data-lfr-editable-id="cardBannerImage_3" data-lfr-editable-type="image" data-fileentryid="139930" src="/documents/d/guest/cohortehero-png?imagePreview=1">
+----------------------------------------
+Descripción: Ensures <img> elements have alternate text or a role of none or presentation
+Fragmento:
+<img class="c-card-banner__image" data-lfr-editable-id="cardBannerImage_4" data-lfr-editable-type="image" data-fileentryid="89797" src="/documents/d/guest/bannerescuelacantabra?imagePreview=1">
+----------------------------------------
+Descripción: Ensures links have discernible text
+Fragmento:
+<a href="/consejer%C3%ADa"><img alt="" class="w-100" data-lfr-editable-id="image-square" data-lfr-editable-type="image" src="/documents/d/guest/consejeria-salud-logo?imagePreview=1" data-fileentryid="84577"></a>
+----------------------------------------
+Descripción: Ensures links have discernible text
+Fragmento:
+<a href="https://www.escuelacantabradesalud.es/"><img class="c-card-banner__image" data-lfr-editable-id="cardBannerImage_4" data-lfr-editable-type="image" data-fileentryid="89797" src="/documents/d/guest/bannerescuelacantabra?imagePreview=1"></a>
+----------------------------------------
+Descripción: Ensures links have discernible text
+Fragmento:
+<a target="_blank" href="https://fmvaldecilla.es/unidad/informacion-corporativa/politica-de-calidad-y-medioambiente/">
+----------------------------------------
+Descripción: Ensures links have discernible text
+Fragmento:
+<a target="_blank" href="http://www.escuelacantabradesalud.es/"><img data-senna-off="true" class="c-image" data-lfr-editable-type="image" data-lfr-editable-id="logoImage2" src="/documents/d/guest/logo_escuela-cantabra?imagePreview=1" alt="" data-fileentryid="86381"></a>
+----------------------------------------
+Descripción: Ensures links have discernible text
+Fragmento:
+<a target="_blank" href="https://fmvaldecilla.es/"><img data-senna-off="true" class="c-image" data-lfr-editable-type="image" data-lfr-editable-id="logoImage3" src="/documents/d/guest/logo_fundacion-valdecilla?imagePreview=1" alt="" data-fileentryid="86367"></a>
+----------------------------------------
+Descripción: Ensures links have discernible text
+Fragmento:
+<a target="_blank" href="https://fmvaldecilla.es/unidad/observatorio-de-salud-publica-de-cantabria/">
+----------------------------------------
+Descripción: Ensures links have discernible text
+Fragmento:
+<a target="_blank" href="https://sofosmd.scsalud.es/"><img data-senna-off="true" class="c-image" data-lfr-editable-type="image" data-lfr-editable-id="logoImage5" src="/documents/d/guest/logo_sofos?imagePreview=1" alt="" data-fileentryid="86339"></a>
+----------------------------------------
+Descripción: Ensures links have discernible text
+Fragmento:
+<a href="/home"><img data-senna-off="true" class="c-image" data-lfr-editable-type="image" data-lfr-editable-id="logoImage1" src="/documents/d/guest/logo-consejeria-salud?imagePreview=1" alt="" data-fileentryid="334878"></a>
+----------------------------------------

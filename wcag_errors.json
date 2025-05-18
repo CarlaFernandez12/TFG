@@ -1,0 +1,169 @@
+{
+  "1.1.1": {
+    "description": "Non-text content must have a text alternative.",
+    "prompt": "Revisa todos los elementos de contenido no textual (como <img>, <svg>, <canvas>, <input type='image'>, íconos con background-image o pseudo-elementos). Aplica las siguientes reglas:\n\n1. Para imágenes informativas (<img>): agrega el atributo 'alt' con una descripción significativa del contenido o función. Ejemplo:\n   ✅ <img src='grafico.png' alt='Gráfico de crecimiento anual'>\n\n2. Para imágenes decorativas: usa alt=''. Ejemplo:\n   ✅ <img src='decoracion.png' alt=''>\n\n3. Para íconos que actúan como botones o enlaces: usa 'aria-label', 'aria-labelledby', o texto visible. Ejemplo:\n   ✅ <button aria-label='Eliminar'><img src='trash.svg' alt=''></button>\n\n4. No anides etiquetas <img> dentro de otras etiquetas <img>. Las imágenes deben ser elementos individuales.\n\n5. Si es contenido de control (<input type='image'>), debe tener un 'alt' que describa su propósito. Ejemplo:\n   ✅ <input type='image' src='enviar.png' alt='Enviar formulario'>\n\n6. Si el contenido es CAPTCHA: proporciona una descripción de su propósito y una alternativa accesible (como audio o pregunta lógica). Ejemplo:\n   ✅ <img src='captcha.png' alt='Ingrese los caracteres que ve en la imagen'> + alternativa\n\n7. Si el contenido es decorativo vía CSS (como background-image), asegúrate de que no transmita información, o usa 'aria-hidden=\"true\"'.\n\n8. Para <svg> o <canvas>: si contienen información, agrega una descripción con <title>, <desc> o atributos accesibles como 'aria-label'.\n\nAplica estas correcciones en el código para cumplir el criterio 1.1.1 de WCAG 2.2 nivel A."
+}
+,
+  "1.2.1": {
+    "description": "Provide alternatives for time-based media that are audio-only or video-only.",
+    "prompt": "Identifica cualquier contenido multimedia pregrabado que sea solo audio (sin vídeo) o solo vídeo (sin audio). Aplica las siguientes correcciones:\n\n1. Para contenido pregrabado **solo de audio** (por ejemplo, podcasts, mensajes de voz):\n   - Proporciona una **transcripción textual** completa que incluya todo el contenido hablado y cualquier sonido relevante.\n   - Ejemplo:\n     ✅ <audio src='mensaje.mp3' controls></audio>\n     <div class='transcripcion'>Transcripción: Hola, este es un mensaje para confirmar la cita del martes.</div>\n\n2. Para contenido pregrabado **solo de vídeo** (sin pista de audio):\n   - Proporciona una **descripción textual detallada** de lo que ocurre visualmente.\n   - Alternativamente, puede incluirse una **pista de audio alternativa** que describa el contenido visual (narración).\n   - Ejemplo:\n     ✅ <video src='video-solo.mp4' controls></video>\n     <div class='descripcion'>Descripción: Un gráfico animado muestra el crecimiento del tráfico web desde enero hasta diciembre, usando barras de colores.</div>\n\n3. La transcripción o descripción debe estar **inmediatamente visible cerca del reproductor** o ser accesible desde un **enlace claramente etiquetado** (ej: 'Ver transcripción', 'Descripción del vídeo').\n\n4. Si el medio es un **equivalente alternativo al texto** y está claramente etiquetado como tal, no es obligatorio aplicar esta regla. Ejemplo:\n   ✅ <video src='mensaje-visivo.mp4' aria-label='Equivalente en vídeo de la siguiente descripción textual'>...</video>\n\nAsegúrate de aplicar estas correcciones para cumplir con el criterio 1.2.1 de WCAG 2.2 nivel A."
+}
+,
+  "1.2.2": {
+    "description": "Captions must be provided for all prerecorded audio content in synchronized media (e.g., video with audio).",
+    "prompt": "Revisa todo contenido multimedia pregrabado con audio sincronizado (como vídeos que incluyan narración, diálogos, sonidos relevantes). Aplica lo siguiente:\n\n1. Agrega **subtítulos sincronizados** (no generados automáticamente ni solo traducciones) que reflejen el contenido hablado y los sonidos relevantes del vídeo.\n\n2. Usa la etiqueta <track> correctamente anidada dentro del elemento <video>. Ejemplo:\n   ✅ <video controls>\n     <source src='video.mp4' type='video/mp4'>\n     <track src='subtitulos.vtt' kind='subtitles' srclang='es' label='Español' default>\n   </video>\n\n3. Alternativamente, si el reproductor multimedia lo permite, asegúrate de que los subtítulos estén integrados y activables por el usuario.\n\n4. No confundas 'subtitles' (traducciones) con 'captions' (descripción completa del audio). Los subtítulos deben incluir:\n   - Diálogos.\n   - Identificación de hablantes si es necesario.\n   - Sonidos importantes (música, risas, ruidos relevantes, etc.).\n\n5. Si el vídeo es un medio alternativo claramente etiquetado para texto (por ejemplo, un vídeo que reemplaza a una descripción textual), esta regla no aplica.\n\nEjemplo de excepción válida:\n   ✅ <video aria-label='Equivalente visual del siguiente párrafo'>...</video>\n\nCorrige el código según estas indicaciones para cumplir con el criterio 1.2.2 de WCAG 2.2 nivel A."
+}
+,
+  "1.2.3": {
+    "description": "An audio description or a full media alternative must be provided for prerecorded synchronized media (video with audio).",
+    "prompt": "Para todo contenido pregrabado que combine vídeo y audio (medios sincronizados), revisa si existen elementos visuales importantes (acciones, expresiones, cambios de escena) que no son explicados por el audio. Si es así, aplica una de las siguientes opciones:\n\n1. **Agregar una pista de descripción de audio (audio description):** Una narración adicional que describe lo que ocurre visualmente durante pausas o silencios en el audio principal.\n   - Puede incluirse como una segunda pista de audio o como un archivo separado.\n\n2. **Proporcionar una alternativa completa para medios temporales:** Una transcripción detallada del contenido completo (audio + descripciones visuales), presentada como un texto accesible cerca del reproductor.\n\nEjemplos:\n✅ <video controls>\n   <source src='video.mp4' type='video/mp4'>\n   <track kind='descriptions' src='descripcion.vtt' srclang='es' label='Descripción de audio'>\n</video>\n\n✅ Alternativa textual:\n<div class='media-alternativa'>\n  <h3>Transcripción completa</h3>\n  <p>Se muestra una ciudad al amanecer. Una voz dice: 'Buenos días, comenzamos el informe diario...'</p>\n</div>\n\n3. Si el vídeo es un medio alternativo claramente etiquetado para reemplazar contenido textual (por ejemplo, una animación que representa una descripción textual ya disponible), **esta regla no aplica**.\n\nCorrige el contenido asegurando que el usuario tenga acceso tanto a la información visual como a la auditiva, cumpliendo así el criterio 1.2.3 de WCAG 2.2 Nivel A."
+}
+,
+  "1.3.1": {
+    "description": "Information, structure, and relationships conveyed visually must be represented semantically or programmatically (e.g., via proper HTML tags or ARIA).",
+    "prompt": "Asegúrate de que la estructura y las relaciones del contenido (títulos, secciones, listas, formularios, tablas, etc.) estén representadas mediante etiquetas semánticas o atributos programáticos. No uses <div> o <span> para elementos que tienen significado estructural o relacional.\n\n1. **Estructura del documento:** Usa <header>, <nav>, <main>, <section>, <article> y <footer> para definir regiones.\n2. **Listas:** Usa <ul>, <ol> y <li> para listas. No simules listas con solo saltos de línea o guiones.\n3. **Tablas de datos:** Usa <table> junto con <thead>, <tbody>, <th>, <td> y <caption>. Asegúrate de usar correctamente scope='col' o scope='row' para los encabezados.\n4. **Formularios:** Usa <label for='id'> para cada campo de formulario (<input>, <select>, <textarea>), o asocia el texto directamente usando <label> anidado.\n5. **Relaciones implícitas:** Si elementos dependen unos de otros visualmente (por ejemplo, icono junto a texto, campos agrupados), haz que esta relación sea clara con estructuras semánticas o ARIA (ej: <fieldset>, <legend>, aria-labelledby).\n\nEjemplo incorrecto:\n<div class='section-title'>Contacto</div>\n✅ Corrección:\n<h2>Contacto</h2>\n\nEjemplo incorrecto:\n<div>- Teléfono: 123456789</div>\n✅ Corrección:\n<ul><li>Teléfono: 123456789</li></ul>\n\nCorrige cualquier contenido que use <div> o <span> para representar relaciones lógicas entre elementos sin semántica explícita. Usa HTML semántico o atributos ARIA donde sea necesario."
+}
+,
+  "1.3.2": {
+    "description": "The reading sequence must be logical and programmatically determinable.",
+    "prompt": "Asegúrate de que el orden de los elementos en el código HTML (DOM) siga el mismo orden lógico que el contenido visual o narrativo. Esto es esencial para lectores de pantalla y navegación por teclado.\n\n1. **Orden del DOM:** El contenido debe estar estructurado en el DOM en el mismo orden en que un usuario debe leerlo o interactuar con él. Evita reordenar visualmente los elementos con CSS si eso altera el significado.\n\n2. **Evita CSS que rompa la lógica:** Propiedades como `order` en Flexbox o `grid-area` en Grid pueden cambiar el orden visual pero no el DOM. Úsalas solo si no afectan la comprensión del contenido.\n\n3. **Tablas y formularios:** El orden de etiquetas y campos debe reflejar el flujo natural de lectura. Usa `fieldset` y `legend` si agrupas campos relacionados.\n\n4. **Contenido multimedia o dividido en columnas:** Si presentas columnas de texto o bloques flotantes (`float`, `column-count`), asegúrate de que se lean correctamente en modo lineal (DOM).\n\n✅ Ejemplo correcto:\n```html\n<h2>Resumen</h2>\n<p>Este es el resumen...</p>\n<h2>Detalles</h2>\n<p>Detalles del contenido...</p>\n```\n❌ Ejemplo incorrecto (orden invertido visualmente con Flexbox):\n```html\n<div style='display: flex;'>\n  <div style='order: 2;'>Título</div>\n  <div style='order: 1;'>Contenido</div>\n</div>\n```\n✅ Corrección: Ajusta el DOM para que 'Título' aparezca antes que 'Contenido' también en el código.\n\nLa secuencia lógica debe mantenerse tanto visual como programáticamente. Usa atributos como `aria-flowto` solo si no puedes garantizarlo con el orden natural del DOM."
+}
+,
+  "1.3.3": {
+    "description": "Instructions must not rely solely on sensory characteristics like shape, color, size, location, orientation, or sound.",
+    "prompt": "Revisa que las instrucciones no dependan únicamente de características sensoriales como forma, color, tamaño, ubicación visual, orientación o sonidos. Por ejemplo, evita frases como 'haz clic en el botón azul', 'mira la esquina superior derecha' o 'escucha el pitido'.\n\nProporciona identificadores textuales claros y específicos, como 'haz clic en el botón de enviar' o 'selecciona la opción de \"aceptar términos\"'.\n\nPara requerimientos relacionados con el color, asegúrate de que la información también esté disponible mediante otros medios (ver criterio 1.4)."
+}
+,
+  "1.4.1": {
+    "description": "Color must not be the only visual means of conveying information.",
+    "prompt": "No uses solo el color para transmitir información, indicar acciones, solicitudes o distinguir elementos. Por ejemplo, si usas rojo para señalar un error, añade también texto explicativo, íconos, subrayados u otros indicadores visibles.\n\nEjemplo correcto: <span style='color: red;'>Error: campo obligatorio <i aria-hidden='true' class='icon-error'></i></span>\n\nEsto asegura que usuarios con daltonismo o discapacidad visual capten el mensaje correctamente.\n\nRecuerda que la información debe ser accesible también sin color, combinando texto, formas o símbolos."
+}
+,
+  "1.4.2": {
+    "description": "Audio that plays automatically for more than 3 seconds must be controllable by the user.",
+    "prompt": "Evita la reproducción automática de audio. Si es necesario que el audio se reproduzca automáticamente por más de 3 segundos, proporciona controles visibles y accesibles para pausar, detener o ajustar el volumen del audio de manera independiente al volumen general del sistema.\n\nAsegúrate de que los controles sean fácilmente identificables, operables mediante teclado, y compatibles con lectores de pantalla.\n\nEjemplo: un botón con etiqueta clara como 'Pausar audio' o un control deslizante de volumen visible junto al reproductor."
+}
+,
+  "2.1.1": {
+    "description": "All functionality must be operable through a keyboard interface without requiring specific timings.",
+    "prompt": "Verifica que todos los elementos interactivos (botones, enlaces, formularios, menús, controles personalizados) sean accesibles y operables usando solo el teclado (normalmente Tab para navegación y Enter o Space para activar).\n\nAsegúrate de que:\n- El foco de teclado sea visible claramente.\n- No se requieran pulsaciones con temporización precisa.\n- No existan trampas de teclado que impidan salir o navegar con teclado.\n\nEsto garantiza que usuarios que no usan ratón puedan acceder y usar toda la funcionalidad."
+}
+,
+  "2.1.2": {
+    "description": "There must be no keyboard traps; keyboard focus must be able to move into and out of all components.",
+    "prompt": "Asegúrate de que el foco del teclado pueda entrar y salir libremente de cualquier componente interactivo, como modales, menús desplegables o widgets.\n\nVerifica que:\n- No existan trampas de teclado que impidan salir con Tab, Shift+Tab u otros métodos estándar.\n- Se use correctamente el atributo tabindex para controlar el orden del foco.\n- Los modales o diálogos se puedan cerrar con teclas estándar como Esc.\n- Si se requiere un método especial para salir, informa claramente al usuario mediante instrucciones visibles o accesibles.\n\nEsto evita que usuarios de teclado queden atrapados en secciones que impiden la navegación."
+}
+,
+ "2.1.4": {
+    "description": "Character key shortcuts must be avoidable, remappable, or only active on focus.",
+    "prompt": "Evita usar atajos de teclado que respondan a una sola tecla (letras, números o símbolos) sin modificadores.\n\nSi se implementan:\n- Proporciona un mecanismo claro y accesible para desactivar esos atajos.\n- O permite remapearlos para incluir teclas modificadoras como Ctrl, Alt o Shift.\n- O asegúrate de que el atajo solo esté activo cuando el componente correspondiente tenga el foco.\n\nEsto evita interferencias con la navegación estándar y problemas para usuarios con discapacidad."
+}
+,
+  "2.2.1": {
+    "description": "Time limits must be adjustable or allow sufficient extension.",
+    "prompt": "Si existen límites de tiempo en la interacción (ej. formularios, sesiones, cuestionarios), asegúrate de que el usuario pueda:\n- Desactivar el límite antes de que se active,\n- O ajustar el tiempo disponible en un rango amplio (al menos 10 veces el valor predeterminado),\n- O recibir una advertencia antes de que expire el tiempo con al menos 20 segundos para extenderlo mediante una acción sencilla (como pulsar la barra espaciadora),\n- Y permitir extender el tiempo al menos 10 veces.\n\nSi el límite es imprescindible (evento en tiempo real, actividad esencial o superior a 20 horas), documenta esta excepción claramente.\n\nImplementa controles visibles y accesibles para estas opciones."
+}
+,
+  "2.2.2": {
+    "description": "Users must be able to pause, stop, or hide moving, blinking, scrolling, or auto-updating content.",
+    "prompt": "Si tienes contenido en movimiento, parpadeo o desplazamiento que comienza automáticamente, dura más de 5 segundos y se presenta junto a otro contenido, proporciona controles visibles y accesibles para pausar, detener o esconder esa animación o efecto, a menos que sea esencial para la actividad.\n\nPara contenido que se actualiza automáticamente y se muestra junto a otros contenidos, ofrece también opciones para pausar, detener o controlar la frecuencia de actualización, salvo que la actualización automática sea esencial.\n\nEvita el uso excesivo de aria-live en áreas que cambian automáticamente para no confundir a los usuarios. Documenta claramente si alguna animación o actualización es esencial y no puede pausarse."
+}
+,
+ "2.3.1": {
+    "description": "Content must not flash more than three times per second.",
+    "prompt": "Evita animaciones, destellos o elementos que parpadeen más de tres veces por segundo (3Hz). Usa efectos visuales suaves y limita la frecuencia de parpadeo para reducir riesgos de convulsiones o reacciones físicas adversas."
+}
+,
+  "2.4.1": {
+    "description": "A mechanism must be available to skip blocks of repeated content.",
+    "prompt": "Incluye un enlace al inicio de la página, visible o accesible solo para teclados, con href='#main' o similar, que permita saltar directamente al contenido principal. Asegúrate de que el contenedor principal tenga un id único como 'main' para facilitar el salto."
+}
+,
+  "2.4.2": {
+    "description": "Web pages must have descriptive titles.",
+    "prompt": "Asegúrate de que cada página tenga una etiqueta <title> única, descriptiva y significativa dentro del <head>. Ejemplo: <title>Panel de administración - Usuarios</title>."
+}
+,
+  "2.4.3": {
+    "description": "Focus order must be logical and meaningful.",
+    "prompt": "El orden del foco (tabulación) debe seguir la estructura visual y lógica de la interfaz. No uses tabindex mayores a 0 salvo en casos muy justificados."
+  },
+  "2.4.4": {
+    "description": "The purpose of each link must be clear from the link text.",
+    "prompt": "Evita textos genéricos como 'haz clic aquí'. Usa textos descriptivos como <a href='/descargar'>Descargar informe en PDF</a>."
+}
+,
+  "2.5.1": {
+    "description": "Functionality operated by gestures must also be operable with a single pointer.",
+    "prompt": "Si usas gestos (como deslizar), ofrece una alternativa con un solo clic o toque. Ejemplo: un botón de avance en carruseles además del gesto."
+  },
+  "2.5.2": {
+    "description": "Las funciones operadas con un solo puntero deben poder cancelarse o revertirse.",
+    "prompt": "Asegúrate de que las acciones iniciadas por clic o toque puedan cancelarse antes de completarse o deshacerse después. Por ejemplo, usa diálogos de confirmación que permitan cerrar sin ejecutar la acción, como: <button onclick='confirmarBorrado()'>Borrar</button> con opción de cancelar."
+}
+,
+  "2.5.3": {
+    "description": "Las etiquetas visibles deben incluirse en el nombre accesible del componente.",
+    "prompt": "Verifica que el texto visible del control esté reflejado en su nombre accesible mediante atributos como aria-label, aria-labelledby o el contenido textual. Por ejemplo, un botón con icono y sin texto visible debe tener aria-label='Buscar' para que los lectores de pantalla lo reconozcan."
+}
+,
+ "2.5.4": {
+    "description": "La activación mediante movimiento debe ser opcional o disponer de alternativas accesibles.",
+    "prompt": "Si una función se activa por movimiento del dispositivo (como agitar o inclinar), proporciona controles visibles alternativos para activarla. Además, permite desactivar la activación por movimiento para evitar activaciones accidentales, salvo que el movimiento sea esencial para la función."
+}
+,
+  "3.1.1": {
+    "description": "El idioma predeterminado de la página debe estar definido.",
+    "prompt": "Asegúrate de que la etiqueta <html> incluya el atributo lang con el código del idioma principal de la página. Por ejemplo: <html lang='es'> para español o <html lang='en'> para inglés."
+}
+,
+  "3.2.1": {
+    "description": "Los componentes de la interfaz no deben cambiar el contexto al recibir el foco.",
+    "prompt": "Asegúrate de que al enfocar un elemento (como un campo o menú) no se produzca un cambio automático de página o contenido sin que el usuario lo haya solicitado explícitamente."
+}
+,
+  "3.2.2": {
+    "description": "Changing a UI component must not trigger context change without warning.",
+    "prompt": "Si cambiar un componente provoca navegación o recarga (como seleccionar un país en un select), avisa previamente o requiere una confirmación (como un botón)."
+  },
+ "3.2.6": {
+    "description": "Los mecanismos de ayuda deben mantenerse en la misma ubicación relativa en todas las páginas.",
+    "prompt": "Coloca opciones de ayuda como contacto, chat o asistencia en una zona constante (por ejemplo, el pie de página o una barra lateral fija) en todas las páginas. No cambies su posición a menos que el usuario lo solicite."
+}
+,
+ "3.3.1": {
+    "description": "Los errores de entrada deben ser identificados y descritos mediante texto comprensible.",
+    "prompt": "Cuando se detecte un error en un campo de formulario, muestra un mensaje textual claro cerca del campo afectado. Usa atributos como aria-describedby o role='alert' para asegurar su accesibilidad."
+}
+,
+ "3.3.2": {
+    "description": "Debe proporcionarse una etiqueta o instrucción clara cuando se requiera la entrada del usuario.",
+    "prompt": "Asegura que todos los campos de formulario tengan una etiqueta visible usando <label for='id'>. Si el campo requiere un formato específico (como fecha o número), proporciona instrucciones antes o junto al campo.Ejemplo: <label for='searchbar-2'>Buscar</label><input id='searchbar-2' ...>. No te bases solo en el placeholder para describir el campo."
+}
+,
+  "3.3.7": {
+    "description": "La información que el usuario ya proporcionó no debe pedirse de nuevo en el mismo proceso, salvo por razones de seguridad, validez o necesidad esencial.",
+    "prompt": "Si un usuario ya ingresó datos durante un proceso (como nombre, dirección o correo), evita que deba volver a escribirlos. Usa autocompletado, almacenamiento temporal o selección desde entradas anteriores cuando sea posible."
+}
+,
+  "4.1.1": {
+    "description": "Cada valor de atributo 'id' debe ser único en la página.",
+    "prompt": "Verifica que los atributos id sean únicos. Si hay elementos repetidos como id='nav-mobile-pages', cambia a id='nav-mobile-pages-1', 'nav-mobile-pages-2', etc., para evitar conflictos."
+},
+  "4.1.2": {
+    "description": "El nombre, rol y valor de los componentes de interfaz deben poder determinarse mediante programación, y cualquier cambio debe ser comunicado a las tecnologías de asistencia.",
+    "prompt": "Asegúrate de que los elementos <button> tengan un nombre accesible. Si están vacíos o solo contienen un <span> sin texto, añade un atributo aria-label. Ejemplo: <button class='owl-dot' aria-label='Ir al slide 1'><span></span></button>. También puedes añadir texto visible dentro del botón o usar aria-labelledby si ya hay un texto descriptivo en otro lugar de la página."
+},
+  "4.1.2 + 1.1.1": {
+    "description": "Los botones deben tener texto discernible o nombre accesible.",
+    "prompt": "Asegúrate de que todos los <button> tengan texto visible o un atributo aria-label. Por ejemplo: <button aria-label='Ir al slide 1'><span></span></button> o <button><span>Siguiente</span></button>. No dejes botones con solo <span> vacío."
+  },
+  "2.2.4 + 4.1.2": {
+    "description": "Los enlaces deben tener texto visible o nombre accesible.",
+    "prompt": "Asegúrate de que todos los enlaces tengan texto visible o usa aria-label. Por ejemplo: <a href='...' aria-label='Servicio Aragonés de Salud'><img src='logo.svg' alt=''></a>."
+}
+
+
+}
+
+
