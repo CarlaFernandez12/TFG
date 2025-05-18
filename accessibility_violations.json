@@ -1,5 +1,401 @@
 [
     {
+        "description": "Ensures buttons have discernible text",
+        "help": "Buttons must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/button-name?application=axeAPI",
+        "id": "button-name",
+        "impact": "critical",
+        "nodes": [
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "non-empty-if-present",
+                        "impact": "critical",
+                        "message": "Element has a value attribute and the value attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-value",
+                        "impact": "critical",
+                        "message": "Element has no value attribute or the value attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": "",
+                        "id": "button-has-visible-text",
+                        "impact": "critical",
+                        "message": "Element does not have inner text that is visible to screen readers",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element has a value attribute and the value attribute is empty\n  Element has no value attribute or the value attribute is empty\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"\n  Element has no title attribute or the title attribute is empty",
+                "html": "<button role=\"button\" class=\"owl-dot active\"><span></span></button>",
+                "impact": "critical",
+                "none": [
+                    {
+                        "data": null,
+                        "id": "focusable-no-name",
+                        "impact": "serious",
+                        "message": "Element is in tab order and does not have accessible text",
+                        "relatedNodes": []
+                    }
+                ],
+                "target": [
+                    ".owl-dot.active[role=\"button\"]"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "non-empty-if-present",
+                        "impact": "critical",
+                        "message": "Element has a value attribute and the value attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-value",
+                        "impact": "critical",
+                        "message": "Element has no value attribute or the value attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": "",
+                        "id": "button-has-visible-text",
+                        "impact": "critical",
+                        "message": "Element does not have inner text that is visible to screen readers",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element has a value attribute and the value attribute is empty\n  Element has no value attribute or the value attribute is empty\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"\n  Element has no title attribute or the title attribute is empty",
+                "html": "<button role=\"button\" class=\"owl-dot\"><span></span></button>",
+                "impact": "critical",
+                "none": [
+                    {
+                        "data": null,
+                        "id": "focusable-no-name",
+                        "impact": "serious",
+                        "message": "Element is in tab order and does not have accessible text",
+                        "relatedNodes": []
+                    }
+                ],
+                "target": [
+                    ".owl-dot[role=\"button\"]:nth-child(2)"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "non-empty-if-present",
+                        "impact": "critical",
+                        "message": "Element has a value attribute and the value attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-value",
+                        "impact": "critical",
+                        "message": "Element has no value attribute or the value attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": "",
+                        "id": "button-has-visible-text",
+                        "impact": "critical",
+                        "message": "Element does not have inner text that is visible to screen readers",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element has a value attribute and the value attribute is empty\n  Element has no value attribute or the value attribute is empty\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"\n  Element has no title attribute or the title attribute is empty",
+                "html": "<button role=\"button\" class=\"owl-dot\"><span></span></button>",
+                "impact": "critical",
+                "none": [
+                    {
+                        "data": null,
+                        "id": "focusable-no-name",
+                        "impact": "serious",
+                        "message": "Element is in tab order and does not have accessible text",
+                        "relatedNodes": []
+                    }
+                ],
+                "target": [
+                    ".owl-dot[role=\"button\"]:nth-child(3)"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "non-empty-if-present",
+                        "impact": "critical",
+                        "message": "Element has a value attribute and the value attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-value",
+                        "impact": "critical",
+                        "message": "Element has no value attribute or the value attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": "",
+                        "id": "button-has-visible-text",
+                        "impact": "critical",
+                        "message": "Element does not have inner text that is visible to screen readers",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element has a value attribute and the value attribute is empty\n  Element has no value attribute or the value attribute is empty\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"\n  Element has no title attribute or the title attribute is empty",
+                "html": "<button role=\"button\" class=\"owl-dot\"><span></span></button>",
+                "impact": "critical",
+                "none": [
+                    {
+                        "data": null,
+                        "id": "focusable-no-name",
+                        "impact": "serious",
+                        "message": "Element is in tab order and does not have accessible text",
+                        "relatedNodes": []
+                    }
+                ],
+                "target": [
+                    ".owl-dot[role=\"button\"]:nth-child(4)"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "non-empty-if-present",
+                        "impact": "critical",
+                        "message": "Element has a value attribute and the value attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-value",
+                        "impact": "critical",
+                        "message": "Element has no value attribute or the value attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": "",
+                        "id": "button-has-visible-text",
+                        "impact": "critical",
+                        "message": "Element does not have inner text that is visible to screen readers",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element has a value attribute and the value attribute is empty\n  Element has no value attribute or the value attribute is empty\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"\n  Element has no title attribute or the title attribute is empty",
+                "html": "<button role=\"button\" class=\"owl-dot\"><span></span></button>",
+                "impact": "critical",
+                "none": [
+                    {
+                        "data": null,
+                        "id": "focusable-no-name",
+                        "impact": "serious",
+                        "message": "Element is in tab order and does not have accessible text",
+                        "relatedNodes": []
+                    }
+                ],
+                "target": [
+                    ".owl-dot[role=\"button\"]:nth-child(5)"
+                ]
+            }
+        ],
+        "tags": [
+            "cat.name-role-value",
+            "wcag2a",
+            "wcag412",
+            "section508",
+            "section508.22.a"
+        ]
+    },
+    {
         "description": "Ensures every id attribute value is unique",
         "help": "id attribute value must be unique",
         "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/duplicate-id?application=axeAPI",
@@ -10,32 +406,32 @@
                 "all": [],
                 "any": [
                     {
-                        "data": "Content",
+                        "data": "nav-mobile-pages",
                         "id": "duplicate-id",
                         "impact": "minor",
                         "message": "Document has multiple static elements with the same id attribute",
                         "relatedNodes": [
                             {
-                                "html": "<div class=\"show  \" id=\"Content\" role=\"presentation\">",
+                                "html": "<span class=\"flex items-center px-base py-sm font-semibold\" data-idresponsive=\"90\" aria-current=\"page\" id=\"nav-mobile-pages\">\n\t\t\t\t\t\t\t\t\t\t  <strong>Ciudadanía</strong>\n\t\t\t\t\t\t\t\t\t\t</span>",
                                 "target": [
-                                    "#wfkm___fm > .c-search-bar-menu > .show[role=\"presentation\"]"
+                                    "span[data-idresponsive=\"\\39 0\"]"
                                 ]
                             },
                             {
-                                "html": "<div class=\"show  \" id=\"Content\" role=\"presentation\">",
+                                "html": "<span class=\"flex items-center px-base py-sm font-semibold\" data-idresponsive=\"91\" aria-current=\"page\" id=\"nav-mobile-pages\">\n\t\t\t\t\t\t\t\t\t\t  <strong>Conocimiento</strong>\n\t\t\t\t\t\t\t\t\t\t</span>",
                                 "target": [
-                                    ".c-search-bar > .show[role=\"presentation\"]"
+                                    "span[data-idresponsive=\"\\39 1\"]"
                                 ]
                             }
                         ]
                     }
                 ],
                 "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute",
-                "html": "<div class=\"show  \" id=\"Content\" role=\"presentation\">",
+                "html": "<span class=\"flex items-center px-base py-sm font-semibold\" data-idresponsive=\"89\" aria-current=\"page\" id=\"nav-mobile-pages\">\n\t\t\t\t\t\t\t\t\t\t  <strong>Mi hospital</strong>\n\t\t\t\t\t\t\t\t\t\t</span>",
                 "impact": "minor",
                 "none": [],
                 "target": [
-                    "#dkrk___fm > .c-search-bar-menu > .show[role=\"presentation\"]"
+                    "span[data-idresponsive=\"\\38 9\"]"
                 ]
             }
         ],
@@ -99,11 +495,11 @@
                     }
                 ],
                 "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
-                "html": "<img class=\"c-card-image__image\" data-lfr-editable-id=\"imageImageCardHorizontal_1\" data-lfr-editable-type=\"image\" data-fileentryid=\"85787\" src=\"/documents/d/guest/ciudadania?imagePreview=1\">",
+                "html": "<img class=\"w-24\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2023/12/servicio-aragones-de-salud.svg\">",
                 "impact": "critical",
                 "none": [],
                 "target": [
-                    "img[data-lfr-editable-id=\"imageImageCardHorizontal_1\"]"
+                    "a[target=\"_blank\"] > .w-24"
                 ]
             },
             {
@@ -153,11 +549,11 @@
                     }
                 ],
                 "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
-                "html": "<img class=\"c-card-image__image\" data-lfr-editable-id=\"imageImageCardHorizontal_2\" data-lfr-editable-type=\"image\" data-fileentryid=\"90579\" src=\"/documents/d/guest/profesionales?imagePreview=1\">",
+                "html": "<img class=\" object-cover item mx-auto\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2024/02/hcuz_home.webp\">",
                 "impact": "critical",
                 "none": [],
                 "target": [
-                    "img[data-lfr-editable-id=\"imageImageCardHorizontal_2\"]"
+                    ".mx-auto.object-cover.item"
                 ]
             },
             {
@@ -207,11 +603,11 @@
                     }
                 ],
                 "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
-                "html": "<img class=\"c-card-image__image\" data-lfr-editable-id=\"imageImageCardHorizontal_3\" data-lfr-editable-type=\"image\" data-fileentryid=\"156585\" src=\"/documents/d/guest/oficina-jpg?imagePreview=1\">",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/03/foto-1.jpeg\">",
                 "impact": "critical",
                 "none": [],
                 "target": [
-                    "img[data-lfr-editable-id=\"imageImageCardHorizontal_3\"]"
+                    ".cloned.owl-item:nth-child(1) > .bloque_noticia_home.item > .h-48.object-cover"
                 ]
             },
             {
@@ -261,11 +657,11 @@
                     }
                 ],
                 "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
-                "html": "<img class=\"c-card-image__image\" data-lfr-editable-id=\"imageImageCardHorizontal_4\" data-lfr-editable-type=\"image\" data-fileentryid=\"90622\" src=\"/documents/d/guest/transparencia?imagePreview=1\">",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/03/Foto-grupo-planta.jpeg\">",
                 "impact": "critical",
                 "none": [],
                 "target": [
-                    "img[data-lfr-editable-id=\"imageImageCardHorizontal_4\"]"
+                    ".cloned.owl-item:nth-child(2) > .bloque_noticia_home.item > .h-48.object-cover"
                 ]
             },
             {
@@ -315,11 +711,11 @@
                     }
                 ],
                 "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
-                "html": "<img class=\"c-card-banner__image\" data-lfr-editable-id=\"cardBannerImage_1\" data-lfr-editable-type=\"image\" data-fileentryid=\"85749\" src=\"/documents/d/guest/card-banner?imagePreview=1\">",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/02/Podcast.jpeg\">",
                 "impact": "critical",
                 "none": [],
                 "target": [
-                    "img[data-lfr-editable-id=\"cardBannerImage_1\"]"
+                    ".cloned.owl-item:nth-child(3) > .bloque_noticia_home.item > .h-48.object-cover"
                 ]
             },
             {
@@ -369,11 +765,11 @@
                     }
                 ],
                 "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
-                "html": "<img class=\"c-card-banner__image\" data-lfr-editable-id=\"cardBannerImage_2\" data-lfr-editable-type=\"image\" data-fileentryid=\"89809\" src=\"/documents/d/guest/bannermisaludscs?imagePreview=1\">",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/02/cirugia-en-directo.jpeg\">",
                 "impact": "critical",
                 "none": [],
                 "target": [
-                    "img[data-lfr-editable-id=\"cardBannerImage_2\"]"
+                    ".cloned.owl-item:nth-child(4) > .bloque_noticia_home.item > .h-48.object-cover"
                 ]
             },
             {
@@ -423,11 +819,11 @@
                     }
                 ],
                 "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
-                "html": "<img class=\"c-card-banner__image\" data-lfr-editable-id=\"cardBannerImage_3\" data-lfr-editable-type=\"image\" data-fileentryid=\"139930\" src=\"/documents/d/guest/cohortehero-png?imagePreview=1\">",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/02/Camino-a-la-maternidad.jpeg\">",
                 "impact": "critical",
                 "none": [],
                 "target": [
-                    "img[data-lfr-editable-id=\"cardBannerImage_3\"]"
+                    ".cloned.owl-item:nth-child(5) > .bloque_noticia_home.item > .h-48.object-cover"
                 ]
             },
             {
@@ -477,11 +873,1847 @@
                     }
                 ],
                 "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
-                "html": "<img class=\"c-card-banner__image\" data-lfr-editable-id=\"cardBannerImage_4\" data-lfr-editable-type=\"image\" data-fileentryid=\"89797\" src=\"/documents/d/guest/bannerescuelacantabra?imagePreview=1\">",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/02/farmasonda-3.jpg\">",
                 "impact": "critical",
                 "none": [],
                 "target": [
-                    "img[data-lfr-editable-id=\"cardBannerImage_4\"]"
+                    ".cloned.owl-item:nth-child(6) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/01/trasplantes-scaled.jpg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".cloned.owl-item:nth-child(7) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/01/FORMACION-ESPECIALISTAS-blanco.jpg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".cloned.owl-item:nth-child(8) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/01/Reyes-25.1.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".cloned.owl-item:nth-child(9) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2024/12/Cassandra-centro.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".cloned.owl-item:nth-child(10) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/05/FOTO-FAMILIA-scaled.jpg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".active.owl-item:nth-child(11) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/05/Nino-hospitalizado-2.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".active.owl-item:nth-child(12) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/05/Dia-Mundial-de-la-Higiene-de-Manos.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".active.owl-item:nth-child(13) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/04/Equipo-Cirugia-Vascular.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".active.owl-item:nth-child(14) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/04/Premios-centro-de-dia-romareda-1.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".owl-item:nth-child(15) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/04/Equipo-de-la-Unidad-de-Glaucoma-del-Clinico.jpg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".owl-item:nth-child(16) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-03-at-11.09.381.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".owl-item:nth-child(17) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/04/Sector-Sanitario-Zaragoza-III-centro-comprometido-con-la-excelencia-en-cuidados.jpg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".owl-item:nth-child(18) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/03/Servicio-Digestivo-1.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".owl-item:nth-child(19) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/03/foto-presentacion-primera-mesa-2.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".owl-item:nth-child(20) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/03/foto-1.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".owl-item:nth-child(21) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/03/Foto-grupo-planta.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".owl-item:nth-child(22) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/02/Podcast.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".owl-item:nth-child(23) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/02/cirugia-en-directo.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".owl-item:nth-child(24) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/02/Camino-a-la-maternidad.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".owl-item:nth-child(25) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/02/farmasonda-3.jpg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".owl-item:nth-child(26) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/01/trasplantes-scaled.jpg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".owl-item:nth-child(27) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/01/FORMACION-ESPECIALISTAS-blanco.jpg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".owl-item:nth-child(28) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/01/Reyes-25.1.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".owl-item:nth-child(29) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2024/12/Cassandra-centro.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".owl-item:nth-child(30) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/05/FOTO-FAMILIA-scaled.jpg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".cloned.owl-item:nth-child(31) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/05/Nino-hospitalizado-2.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".cloned.owl-item:nth-child(32) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/05/Dia-Mundial-de-la-Higiene-de-Manos.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".cloned.owl-item:nth-child(33) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/04/Equipo-Cirugia-Vascular.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".cloned.owl-item:nth-child(34) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/04/Premios-centro-de-dia-romareda-1.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".cloned.owl-item:nth-child(35) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/04/Equipo-de-la-Unidad-de-Glaucoma-del-Clinico.jpg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".cloned.owl-item:nth-child(36) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-03-at-11.09.381.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".cloned.owl-item:nth-child(37) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/04/Sector-Sanitario-Zaragoza-III-centro-comprometido-con-la-excelencia-en-cuidados.jpg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".cloned.owl-item:nth-child(38) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/03/Servicio-Digestivo-1.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".cloned.owl-item:nth-child(39) > .bloque_noticia_home.item > .h-48.object-cover"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "has-alt",
+                        "impact": "critical",
+                        "message": "Element does not have an alt attribute",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-presentation",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "role-none",
+                        "impact": "minor",
+                        "message": "Element's default semantics were not overridden with role=\"none\"",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                "html": "<img class=\"w-full h-48 object-cover\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2025/03/foto-presentacion-primera-mesa-2.jpeg\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".cloned.owl-item:nth-child(40) > .bloque_noticia_home.item > .h-48.object-cover"
                 ]
             }
         ],
@@ -491,6 +2723,136 @@
             "wcag111",
             "section508",
             "section508.22.a"
+        ]
+    },
+    {
+        "description": "Ensures every form element has a label",
+        "help": "Form elements must have labels",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/label?application=axeAPI",
+        "id": "label",
+        "impact": "critical",
+        "nodes": [
+            {
+                "all": [],
+                "any": [],
+                "failureSummary": "Fix all of the following:\n  Form element has explicit <label> that is hidden",
+                "html": "<input class=\"c-input block pr-12 border-black rounded font-semibold placeholder-neutral-dark focus:border-black focus:shadow-outline-focus-input focus:ring-4 focus:ring-warning-base disabled:bg-neutral-light disabled:border-neutral-base w-full text-black w-fit sm:w-80\" id=\"searchbar-2\" value=\"\" name=\"s\" type=\"search\" placeholder=\"Buscar en este sitio\">",
+                "impact": "critical",
+                "none": [
+                    {
+                        "data": null,
+                        "id": "hidden-explicit-label",
+                        "impact": "critical",
+                        "message": "Form element has explicit <label> that is hidden",
+                        "relatedNodes": []
+                    }
+                ],
+                "target": [
+                    "#searchbar-2"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "implicit-label",
+                        "impact": "critical",
+                        "message": "Form element does not have an implicit (wrapped) <label>",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "explicit-label",
+                        "impact": "critical",
+                        "message": "Form element does not have an explicit <label>",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  Element has no title attribute or the title attribute is empty",
+                "html": "<input size=\"40\" maxlength=\"400\" class=\"wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email c-input block mt-sm border-black rounded font-semibold placeholder-neutral-dark focusborder-black focusshadow-outline-focus-input focusring-4 focusring-warning-base disabledbg-neutral-light disabledborder-neutral-base w-full\" aria-required=\"true\" aria-invalid=\"false\" value=\"\" type=\"email\" name=\"email-811\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".wpcf7-email"
+                ]
+            },
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "aria-label",
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "aria-labelledby",
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "implicit-label",
+                        "impact": "critical",
+                        "message": "Form element does not have an implicit (wrapped) <label>",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "explicit-label",
+                        "impact": "critical",
+                        "message": "Form element does not have an explicit <label>",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "non-empty-title",
+                        "impact": "serious",
+                        "message": "Element has no title attribute or the title attribute is empty",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  Element has no title attribute or the title attribute is empty",
+                "html": "<textarea cols=\"40\" rows=\"10\" maxlength=\"2000\" class=\"wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required block mt-sm px-base py-sm border-black rounded font-semibold leading-normal placeholder-neutral-dark focusborder-black focusshadow-outline-focus-input focusring-4 focusring-warning-base disabledbg-neutral-light disabledborder-neutral-base w-full\" id=\"commentario\" aria-required=\"true\" aria-invalid=\"false\" name=\"textarea-502\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    "#commentario"
+                ]
+            }
+        ],
+        "tags": [
+            "cat.forms",
+            "wcag2a",
+            "wcag332",
+            "wcag131",
+            "section508",
+            "section508.22.n"
         ]
     },
     {
@@ -540,7 +2902,7 @@
                     }
                 ],
                 "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
-                "html": "<a href=\"/consejer%C3%ADa\"><img alt=\"\" class=\"w-100\" data-lfr-editable-id=\"image-square\" data-lfr-editable-type=\"image\" src=\"/documents/d/guest/consejeria-salud-logo?imagePreview=1\" data-fileentryid=\"84577\"></a>",
+                "html": "<a href=\"https://www.aragon.es/organismos/departamento-de-sanidad/servicio-aragones-de-salud\" target=\"_blank\">\n\t\t\t\t\t\t<img class=\"w-24\" src=\"https://hospitalclinico.salud.aragon.es/wp-content/uploads/2023/12/servicio-aragones-de-salud.svg\">\n                    </a>",
                 "impact": "serious",
                 "none": [
                     {
@@ -552,447 +2914,7 @@
                     }
                 ],
                 "target": [
-                    ":root"
-                ]
-            },
-            {
-                "all": [],
-                "any": [
-                    {
-                        "data": null,
-                        "id": "has-visible-text",
-                        "impact": "minor",
-                        "message": "Element does not have text that is visible to screen readers",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "aria-label",
-                        "impact": "serious",
-                        "message": "aria-label attribute does not exist or is empty",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "aria-labelledby",
-                        "impact": "serious",
-                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "role-presentation",
-                        "impact": "minor",
-                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "role-none",
-                        "impact": "minor",
-                        "message": "Element's default semantics were not overridden with role=\"none\"",
-                        "relatedNodes": []
-                    }
-                ],
-                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
-                "html": "<a href=\"/scs\"><img alt=\"\" class=\"w-100\" data-lfr-editable-id=\"image-square\" data-lfr-editable-type=\"image\" src=\"/documents/d/guest/logo_scs_2-png?imagePreview=1\" data-fileentryid=\"567226\"></a>",
-                "impact": "serious",
-                "none": [
-                    {
-                        "data": null,
-                        "id": "focusable-no-name",
-                        "impact": "serious",
-                        "message": "Element is in tab order and does not have accessible text",
-                        "relatedNodes": []
-                    }
-                ],
-                "target": [
-                    ".component-image.overflow-hidden > a[href$=\"scs\"]"
-                ]
-            },
-            {
-                "all": [],
-                "any": [
-                    {
-                        "data": null,
-                        "id": "has-visible-text",
-                        "impact": "minor",
-                        "message": "Element does not have text that is visible to screen readers",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "aria-label",
-                        "impact": "serious",
-                        "message": "aria-label attribute does not exist or is empty",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "aria-labelledby",
-                        "impact": "serious",
-                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "role-presentation",
-                        "impact": "minor",
-                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "role-none",
-                        "impact": "minor",
-                        "message": "Element's default semantics were not overridden with role=\"none\"",
-                        "relatedNodes": []
-                    }
-                ],
-                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
-                "html": "<a href=\"https://www.escuelacantabradesalud.es/\"><img class=\"c-card-banner__image\" data-lfr-editable-id=\"cardBannerImage_4\" data-lfr-editable-type=\"image\" data-fileentryid=\"89797\" src=\"/documents/d/guest/bannerescuelacantabra?imagePreview=1\"></a>",
-                "impact": "serious",
-                "none": [
-                    {
-                        "data": null,
-                        "id": "focusable-no-name",
-                        "impact": "serious",
-                        "message": "Element is in tab order and does not have accessible text",
-                        "relatedNodes": []
-                    }
-                ],
-                "target": [
-                    ".c-card-banner.clicable-card.linkify > a"
-                ]
-            },
-            {
-                "all": [],
-                "any": [
-                    {
-                        "data": null,
-                        "id": "has-visible-text",
-                        "impact": "minor",
-                        "message": "Element does not have text that is visible to screen readers",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "aria-label",
-                        "impact": "serious",
-                        "message": "aria-label attribute does not exist or is empty",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "aria-labelledby",
-                        "impact": "serious",
-                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "role-presentation",
-                        "impact": "minor",
-                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "role-none",
-                        "impact": "minor",
-                        "message": "Element's default semantics were not overridden with role=\"none\"",
-                        "relatedNodes": []
-                    }
-                ],
-                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
-                "html": "<a target=\"_blank\" href=\"https://fmvaldecilla.es/unidad/informacion-corporativa/politica-de-calidad-y-medioambiente/\">",
-                "impact": "serious",
-                "none": [
-                    {
-                        "data": null,
-                        "id": "focusable-no-name",
-                        "impact": "serious",
-                        "message": "Element is in tab order and does not have accessible text",
-                        "relatedNodes": []
-                    }
-                ],
-                "target": [
-                    ".c-list-logos__item:nth-child(1) > a[target=\"_blank\"]"
-                ]
-            },
-            {
-                "all": [],
-                "any": [
-                    {
-                        "data": null,
-                        "id": "has-visible-text",
-                        "impact": "minor",
-                        "message": "Element does not have text that is visible to screen readers",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "aria-label",
-                        "impact": "serious",
-                        "message": "aria-label attribute does not exist or is empty",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "aria-labelledby",
-                        "impact": "serious",
-                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "role-presentation",
-                        "impact": "minor",
-                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "role-none",
-                        "impact": "minor",
-                        "message": "Element's default semantics were not overridden with role=\"none\"",
-                        "relatedNodes": []
-                    }
-                ],
-                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
-                "html": "<a target=\"_blank\" href=\"http://www.escuelacantabradesalud.es/\"><img data-senna-off=\"true\" class=\"c-image\" data-lfr-editable-type=\"image\" data-lfr-editable-id=\"logoImage2\" src=\"/documents/d/guest/logo_escuela-cantabra?imagePreview=1\" alt=\"\" data-fileentryid=\"86381\"></a>",
-                "impact": "serious",
-                "none": [
-                    {
-                        "data": null,
-                        "id": "focusable-no-name",
-                        "impact": "serious",
-                        "message": "Element is in tab order and does not have accessible text",
-                        "relatedNodes": []
-                    }
-                ],
-                "target": [
-                    ".c-list-logos__item:nth-child(2) > a[target=\"_blank\"]"
-                ]
-            },
-            {
-                "all": [],
-                "any": [
-                    {
-                        "data": null,
-                        "id": "has-visible-text",
-                        "impact": "minor",
-                        "message": "Element does not have text that is visible to screen readers",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "aria-label",
-                        "impact": "serious",
-                        "message": "aria-label attribute does not exist or is empty",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "aria-labelledby",
-                        "impact": "serious",
-                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "role-presentation",
-                        "impact": "minor",
-                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "role-none",
-                        "impact": "minor",
-                        "message": "Element's default semantics were not overridden with role=\"none\"",
-                        "relatedNodes": []
-                    }
-                ],
-                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
-                "html": "<a target=\"_blank\" href=\"https://fmvaldecilla.es/\"><img data-senna-off=\"true\" class=\"c-image\" data-lfr-editable-type=\"image\" data-lfr-editable-id=\"logoImage3\" src=\"/documents/d/guest/logo_fundacion-valdecilla?imagePreview=1\" alt=\"\" data-fileentryid=\"86367\"></a>",
-                "impact": "serious",
-                "none": [
-                    {
-                        "data": null,
-                        "id": "focusable-no-name",
-                        "impact": "serious",
-                        "message": "Element is in tab order and does not have accessible text",
-                        "relatedNodes": []
-                    }
-                ],
-                "target": [
-                    "a[href$=\"fmvaldecilla.es/\"]"
-                ]
-            },
-            {
-                "all": [],
-                "any": [
-                    {
-                        "data": null,
-                        "id": "has-visible-text",
-                        "impact": "minor",
-                        "message": "Element does not have text that is visible to screen readers",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "aria-label",
-                        "impact": "serious",
-                        "message": "aria-label attribute does not exist or is empty",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "aria-labelledby",
-                        "impact": "serious",
-                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "role-presentation",
-                        "impact": "minor",
-                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "role-none",
-                        "impact": "minor",
-                        "message": "Element's default semantics were not overridden with role=\"none\"",
-                        "relatedNodes": []
-                    }
-                ],
-                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
-                "html": "<a target=\"_blank\" href=\"https://fmvaldecilla.es/unidad/observatorio-de-salud-publica-de-cantabria/\">",
-                "impact": "serious",
-                "none": [
-                    {
-                        "data": null,
-                        "id": "focusable-no-name",
-                        "impact": "serious",
-                        "message": "Element is in tab order and does not have accessible text",
-                        "relatedNodes": []
-                    }
-                ],
-                "target": [
-                    ".c-list-logos__item:nth-child(4) > a[target=\"_blank\"]"
-                ]
-            },
-            {
-                "all": [],
-                "any": [
-                    {
-                        "data": null,
-                        "id": "has-visible-text",
-                        "impact": "minor",
-                        "message": "Element does not have text that is visible to screen readers",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "aria-label",
-                        "impact": "serious",
-                        "message": "aria-label attribute does not exist or is empty",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "aria-labelledby",
-                        "impact": "serious",
-                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "role-presentation",
-                        "impact": "minor",
-                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "role-none",
-                        "impact": "minor",
-                        "message": "Element's default semantics were not overridden with role=\"none\"",
-                        "relatedNodes": []
-                    }
-                ],
-                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
-                "html": "<a target=\"_blank\" href=\"https://sofosmd.scsalud.es/\"><img data-senna-off=\"true\" class=\"c-image\" data-lfr-editable-type=\"image\" data-lfr-editable-id=\"logoImage5\" src=\"/documents/d/guest/logo_sofos?imagePreview=1\" alt=\"\" data-fileentryid=\"86339\"></a>",
-                "impact": "serious",
-                "none": [
-                    {
-                        "data": null,
-                        "id": "focusable-no-name",
-                        "impact": "serious",
-                        "message": "Element is in tab order and does not have accessible text",
-                        "relatedNodes": []
-                    }
-                ],
-                "target": [
-                    "a[href$=\"sofosmd.scsalud.es/\"][target=\"_blank\"]"
-                ]
-            },
-            {
-                "all": [],
-                "any": [
-                    {
-                        "data": null,
-                        "id": "has-visible-text",
-                        "impact": "minor",
-                        "message": "Element does not have text that is visible to screen readers",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "aria-label",
-                        "impact": "serious",
-                        "message": "aria-label attribute does not exist or is empty",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "aria-labelledby",
-                        "impact": "serious",
-                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "role-presentation",
-                        "impact": "minor",
-                        "message": "Element's default semantics were not overridden with role=\"presentation\"",
-                        "relatedNodes": []
-                    },
-                    {
-                        "data": null,
-                        "id": "role-none",
-                        "impact": "minor",
-                        "message": "Element's default semantics were not overridden with role=\"none\"",
-                        "relatedNodes": []
-                    }
-                ],
-                "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
-                "html": "<a href=\"/home\"><img data-senna-off=\"true\" class=\"c-image\" data-lfr-editable-type=\"image\" data-lfr-editable-id=\"logoImage1\" src=\"/documents/d/guest/logo-consejeria-salud?imagePreview=1\" alt=\"\" data-fileentryid=\"334878\"></a>",
-                "impact": "serious",
-                "none": [
-                    {
-                        "data": null,
-                        "id": "focusable-no-name",
-                        "impact": "serious",
-                        "message": "Element is in tab order and does not have accessible text",
-                        "relatedNodes": []
-                    }
-                ],
-                "target": [
-                    ".c-list-logos--footer > .c-list-logos__item:nth-child(1) > a[href$=\"home\"]"
+                    ".float-left > a[target=\"_blank\"]"
                 ]
             }
         ],
